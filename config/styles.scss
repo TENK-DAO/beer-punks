@@ -1,0 +1,21 @@
+/**
+ * Make sure these look good in light mode and dark mode!
+ * If you omit any values, defaults will be used.
+ */
+$white: #fdfdfd;
+$black: #262626;
+$accent: #e73b93;
+
+/**
+ * You can add any other styles below
+ */
+.this-class-is-set-in-i18n-files h1 {
+  color: $accent;
+}
+
+/**
+ * Overriding the default 1:1 ratio of image to text widths
+ */
+.this-class-is-set-in-i18n-files .container > div > div:first-child {
+  flex: 2;
+}

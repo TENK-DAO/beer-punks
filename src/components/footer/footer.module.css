@@ -1,0 +1,10 @@
+/* This is a CSS Module; see https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/ */
+.footer {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-m);
+  justify-content: space-between;
+  padding-bottom: var(--spacing-l);
+  width: 100%;
+}
