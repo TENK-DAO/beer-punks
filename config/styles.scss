@@ -12,3 +12,24 @@ $accent: rgb(0, 175, 0);
 .about h1 {
   color: $accent;
 }
+.team .grid {
+  gap: var(--spacing-xl);
+  grid-template-columns: 1fr 1fr;
+  padding: var(--spacing-xl);
+
+  &>* {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .image {
+    border-radius: 1000px;
+    flex: 0 0 133px;
+    height: 133px;
+    overflow: hidden;
+  }
+
+  .text {
+    flex: 1;
+  }
+}

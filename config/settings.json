@@ -1,7 +1,8 @@
 {
   "author": "@beerpunksdotnft",
   "siteUrl": "https://beerpunks.online",
-  "contractName": "beerpunks.tenk.testnet",
+  "contractName": "bp.tenk.testnet",
+  "image": "BEER_PUNKS_BORD4.png",
   "social": [
     {
       "href": "https://discord.gg/dens4yzvDG",

@@ -34,13 +34,6 @@
   color: var(--accent);
 }
 
-.grid {
-  display: grid;
-  gap: var(--spacing-m);
-  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
-  margin: var(--spacing-m) 0;
-}
-
 .nft {
   background-color: transparent;
   color: inherit;

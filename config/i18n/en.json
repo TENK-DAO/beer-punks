@@ -70,6 +70,49 @@
     {
       "text": "# Minting Schedule\n\n🤟 Total 4000 NFT's available for minting\n\n🏪 200 left for Team Treasury\n\n✅ Community Whitelist + Early Contributors - 555 WL spots no more then 2 NFT's for one wallet - 30/04/2022 | 5,55 NEAR\n\n✅ Public sale: remaining NFT's no more then 5 NFT's for one wallet - 01/05/2022 - 7,77 NEAR",
       "image": "wl-open.png"
+    },
+    {
+      "className": "team",
+      "text": "# Team",
+      "blocks": [
+        {
+          "text": "### Andrii Kysil\n\nCEO / Co-founder / tech",
+          "image": "andril.png"
+        },
+        {
+          "text": "### Eugene\n\nCEO / Co-founder",
+          "image": "eugene.png"
+        },
+        {
+          "text": "### Igor\n\nArt Director",
+          "image": "igor.png"
+        },
+        {
+          "text": "### Aleks Chusov\n\nAdvisor / Marketing support @ First NFT Agency",
+          "image": "aleks.png"
+        }
+      ]
+    },
+    {
+      "className": "our-projects",
+      "text": "# Our Projects",
+      "blocks": [
+        {
+          "image": "cryptobrewmaster.png",
+          "text": "### Cryptobrewmaster\n\nCraft Beer Brewing game",
+          "linkTo": "https://dappradar.com/hive/games/cryptobrewmaster"
+        },
+        {
+          "image": "ocean-planet.png",
+          "text": "### Ocean Planet\n\nPost apocalypse economic strategy and pvp",
+          "linkTo": "https://dappradar.com/hive/games/ocean-planet"
+        },
+        {
+          "image": "fishmaster.png",
+          "text": "### Fishmaster\n\nFishing, farming and restaurant supply strategy",
+          "linkTo": "https://www.fishmaster.io/"
+        }
+      ]
     }
   ]
 }

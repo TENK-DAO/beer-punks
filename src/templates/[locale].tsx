@@ -1,3 +1,4 @@
+import settings from "../../config/settings.json"
 import React, { useEffect, useState } from "react"
 import { PageProps, navigate } from "gatsby"
 import * as naj from "near-api-js"
@@ -10,8 +11,10 @@ import Section from "../components/section"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Markdown from "../components/markdown"
+import Image from "../components/image"
 import type { DecoratedLocale } from "../../lib/locales"
 import useTenk from "../hooks/useTenk"
+import useImageData from "../hooks/useImageData"
 import useHeroStatuses from '../hooks/useHeroStatuses'
 import { Token } from "../near/contracts/tenk"
 
@@ -36,7 +39,9 @@ async function getTokenIDsForTxHash(txHash: string): Promise<string[] | undefine
 const currentUser = wallet.getAccountId()
 
 const Landing: React.FC<PageProps<{}, PageContext>> = ({ location, pageContext: { locale } }) => {
+
   const tenkData = useTenk()
+  const { image } = useImageData(settings.image)
 
   const params = new URLSearchParams(location.search)
   const transactionHashes = params.get('transactionHashes') ?? undefined
@@ -64,11 +69,34 @@ const Landing: React.FC<PageProps<{}, PageContext>> = ({ location, pageContext: 
           title={locale.title}
           description={locale.description}
           favicon={tenkData.contractMetadata?.icon}
+          image={image?.publicURL ?? undefined}
         />
         <Hero heroTree={locale.hero} />
         {locale.extraSections?.map((section, i) => (
           <Section key={i} {...section}>
             <Markdown children={fill(section.text, data)} />
+            {section.blocks && (
+              <div className="grid">
+                {section.blocks.map(({ linkTo, text, image }, j) => {
+                  const El = linkTo ? 'a' : 'div'
+                  const props = linkTo && { href: linkTo, target: '_blank' }
+                  return (
+                    <El key={j} {...props}>
+                      {image && (
+                        <div className="image">
+                          <Image src={image} alt="" />
+                        </div>
+                      )}
+                      {text && (
+                        <div className="text">
+                          <Markdown children={fill(text, data)} />
+                        </div>
+                      )}
+                    </El>
+                  )
+                })}
+              </div>
+            )}
           </Section>
         ))}
       </Layout>
