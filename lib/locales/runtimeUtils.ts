@@ -134,11 +134,10 @@ export function act(action: Action, data: Data): void {
 export function can(action: Action, data: Data): boolean {
   if (action === 'MINT') {
     return Boolean(data.currentUser) && (
-      (data.saleStatus === 'presale' &&
+      (['presale', 'saleOpen'].includes(data.saleStatus) &&
         data.remainingAllowance !== undefined &&
         data.remainingAllowance > 0
-      ) ||
-      (data.saleStatus === 'saleOpen')
+      )
     )
   }
   return true
