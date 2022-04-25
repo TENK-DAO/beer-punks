@@ -66,7 +66,7 @@ const MyNFTs: React.FC<{
               &times;
             </button>
           </header>
-          <div className={`grid ${css.grid}`} ref={containerElement}>
+          <div className={css.grid} ref={containerElement}>
             {nfts.map((nft, index) => (
               <button
                 key={nft.token_id}
