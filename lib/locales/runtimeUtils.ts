@@ -134,10 +134,16 @@ export function act(action: Action, data: Data): void {
 export function can(action: Action, data: Data): boolean {
   if (action === 'MINT') {
     return Boolean(data.currentUser) && (
-      (['presale', 'saleOpen'].includes(data.saleStatus) &&
+      (data.saleStatus === 'presale' &&
         data.remainingAllowance !== undefined &&
         data.remainingAllowance > 0
-      )
+      ) ||
+      (data.saleStatus === 'saleOpen' && (
+        // users are added to the whitelist as they mint during saleOpen;
+        // undefined means they haven't minted yet
+        data.remainingAllowance === undefined ||
+        data.remainingAllowance > 0
+      ))
     )
   }
   return true
