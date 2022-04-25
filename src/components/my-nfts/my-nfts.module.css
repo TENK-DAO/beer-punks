@@ -34,6 +34,10 @@
   color: var(--accent);
 }
 
+.grid {
+  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+}
+
 .nft {
   background-color: transparent;
   color: inherit;
