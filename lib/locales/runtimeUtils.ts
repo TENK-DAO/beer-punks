@@ -138,7 +138,12 @@ export function can(action: Action, data: Data): boolean {
         data.remainingAllowance !== undefined &&
         data.remainingAllowance > 0
       ) ||
-      (data.saleStatus === 'saleOpen')
+      (data.saleStatus === 'saleOpen' && (
+        // users are added to the whitelist as they mint during saleOpen;
+        // undefined means they haven't minted yet
+        data.remainingAllowance === undefined ||
+        data.remainingAllowance > 0
+      ))
     )
   }
   return true

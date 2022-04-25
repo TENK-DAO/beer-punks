@@ -14,8 +14,12 @@ $accent: rgb(0, 175, 0);
 }
 .team .grid {
   gap: var(--spacing-xl);
-  grid-template-columns: 1fr 1fr;
-  padding: var(--spacing-xl);
+  grid-template-columns: auto;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+
+  @media (min-width: 800px) {
+    padding: var(--spacing-xl);
+  }
 
   &>* {
     align-items: center;
@@ -27,9 +31,5 @@ $accent: rgb(0, 175, 0);
     flex: 0 0 133px;
     height: 133px;
     overflow: hidden;
-  }
-
-  .text {
-    flex: 1;
   }
 }
