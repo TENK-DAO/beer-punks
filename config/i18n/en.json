@@ -1,8 +1,8 @@
 {
   "viewIn": "View in English",
   "langPicker": "English",
-  "title": "BEERPUNKS",
-  "description": "BeerPunks is a unique generative collection of 4200 randomly generated beer punk avatars created using over 450 unique traits.",
+  "title": "BeerPunks",
+  "description": "BeerPunks is a unique generative collection of 4200 randomly generated BeerPunk avatars created using over 450 unique traits.",
   "calendarEvent": "Go Mint a BeerPunk!",
   "connectWallet": "Login with NEAR",
   "signOut": "Sign Out",
@@ -62,11 +62,11 @@
   "extraSections": [
     {
       "className": "about",
-      "text": "# WELCOME TO THE BEERVERSE\n\nBeerPunks is a unique generative collection of 4200 randomly generated beer punk avatars created using over 450 unique traits. Beerpunk owners will be able to use their NFTs as avatars in the [CryptoBrewMaster](https://cryptobrewmaster.io/) game\n\nEach Beer Punk is unique and programmatically generated from over 450 possible traits, such as background, headwear or haircut, clothing, bracelets, beer, tattoos, and more.\n\nBeer Punks are stored as NFT tokens on the Near blockchain and hosted on IPFS.\n\nInitial Beer Punk cost is MINT_PRICE.",
+      "text": "# Welcome to the Beerverse\n\nBeerPunks is a unique generative collection of 4200 randomly generated BeerPunk avatars created using over 450 unique traits. BeerPunk owners will be able to use their NFTs as avatars in the [CryptoBrewMaster](https://cryptobrewmaster.io/) game\n\nEach BeerPunk is unique and programmatically generated from over 450 possible traits, such as background, headwear or haircut, clothing, bracelets, beer, tattoos, and more.\n\nBeerPunks are stored as NFT tokens on the Near blockchain and hosted on IPFS.\n\nInitial BeerPunk cost is MINT_PRICE.",
       "image": "about.png"
     },
     {
-      "text": "# Roadmap\n\n✅ 10% Sold - BeerPunks DAO Establishing\n\n✅ 20% Sold - Adding Beer Punks Avatars to CryptoBrewMaster and Ocean Planet games\n\n✅ 40% Sold - Beer Punks Getting Alive as PVP characters in Ocean Planet and CryptoBrewMaster\n\n✅ 60% Sold - 50% of all the market fees are fairly distributed among the Beer Punks Holders\n\n✅ 80% Sold - Cryptobrewmaster Metaverse start of the development\n\n✅ 100% Sold - Further Promotion and DAO Regulations"
+      "text": "# Roadmap\n\n✅ 10% Sold - BeerPunks DAO Establishing\n\n✅ 20% Sold - Adding BeerPunks Avatars to CryptoBrewMaster and Ocean Planet games\n\n✅ 40% Sold - BeerPunks Getting Alive as PVP characters in Ocean Planet and CryptoBrewMaster\n\n✅ 60% Sold - 50% of all the market fees are fairly distributed among the BeerPunks Holders\n\n✅ 80% Sold - Cryptobrewmaster Metaverse start of the development\n\n✅ 100% Sold - Further Promotion and DAO Regulations"
     },
     {
       "text": "# Minting Schedule\n\n🤟 Total 4000 NFT's available for minting\n\n🏪 200 left for Team Treasury\n\n✅ Community Whitelist + Early Contributors - 555 WL spots no more then 2 NFT's for one wallet - 30/04/2022 | 5,55 NEAR\n\n✅ Public sale: remaining NFT's no more then 5 NFT's for one wallet - 01/05/2022 - 7,77 NEAR",
